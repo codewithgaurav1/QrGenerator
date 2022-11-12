@@ -1,0 +1,102 @@
+/*@page {
+  size: A4;
+  margin: 0;
+}*/
+@page {
+    size: 21cm 29.7cm;
+    margin: 10mm 10mm 10mm 10mm;
+    orphans:4;
+    widows:2;
+}
+
+html {
+    height: 100%;
+}
+
+nav, header, footer, form, .qraction, .qr-poster-tip {
+	display: none;
+}
+
+.qraction a {
+    display: none;
+}
+
+.material-tooltip {
+    display: none !important;
+}
+
+body {
+    background-color: white;
+}
+
+.qrcode-name {
+    display: block;
+    font-family: sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.qrcode-display {
+    display: block;
+    width: 256px;
+    height: 256px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.qrcode-vpa {
+    display: block;
+    font-family: sans-serif;
+    font-size: 3rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.qrcode-logo {
+	display: block;
+	text-align: center;
+    font-size: 2.5rem;
+    font-family: sans-serif;
+}
+
+.qrcode-hint {
+	display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+.qrcode-footer {
+    display: none;
+}
+
+.qrcode-footer {
+	display: none;
+    text-align: center;
+    font-size: 14pt;
+    padding: 8px;
+    font-family: monospace;
+    position: fixed;
+    bottom: 0;
+    left:37%;
+    margin: auto;
+}
+
+@media print {
+
+.qrcode-footer {
+    display: block;
+}
+
+.material-icons {
+    display: none !important;
+}
+
+.api-link {
+    display: none !important;
+}
+
+}
+
+}

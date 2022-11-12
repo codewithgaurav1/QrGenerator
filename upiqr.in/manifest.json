@@ -1,0 +1,14 @@
+{
+  "short_name": "UPI QR Code",
+  "name": "NPCI UPI Compliant QR Code Generator",
+  "icons": [
+    {
+      "src": "/images/UPI.jpg",
+      "sizes": "250x80",
+      "type": "image/jpeg"
+    }
+  ],
+  "start_url": "/",
+  "display": "fullscreen",
+  "orientation": "portrait"
+}

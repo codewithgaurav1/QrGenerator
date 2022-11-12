@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from upiqr.in/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 12 Nov 2022 04:44:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta name="description" content="NPCI UPI Compliant QR Code generator and API" />
+  <meta name="keywords" content="upi, bhim, phonepe, payments, qr code, india" />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:url"           content="index.html" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="NPCI UPI Compliant QR Code Generator" />
+  <meta property="og:description"   content="NPCI UPI Compliant QR Code generator and API" />
+  <meta property="og:image"         content="" />
+  <meta name="theme-color" content="#ffab00" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="manifest" href="manifest.json">
+  <title>NPCI UPI Compliant QR Code Generator</title>
+
+  <!-- CSS  -->
+  <link href="../fonts.googleapis.com/css7b4f.css?family=Roboto" rel="stylesheet">
+  <link href="../fonts.googleapis.com/icone91f.css?family=Material+Icons" rel="stylesheet">
+  <link href="libs/materialize/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen"/>
+  <link href="libs/mfp/magnific-popup.css" type="text/css" rel="stylesheet" media="screen"/>
+
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen"/>
+  <link href="css/print.css" type="text/css" rel="stylesheet" media="print"/>
+</head>
+<body class="black-text grey lighten-5">
+  <div class="navbar-fixed hide-on-med-and-down">
+    <nav class="amber accent-4 fixed">
+      <div class="nav-wrapper">
+        <a class='title-text brand-logo'>UPI QR Code Generator</a>
+        <!-- <a href="#" data-activates="menu" class="button-collapse black-text"><i class="material-icons">menu</i></a>
+        <ul class="side-nav" id="menu">
+          <li><a href="#qrcode">QR Code Generator</a></li>
+          <li><a href="#api">API</a></li>
+        </ul> -->
+        <div class="row hide-on-med-and-down">
+          <div class="col s12 m8">
+            
+          </div>
+          <div class="col s0 m4">
+            <ul class="tabs tab-header right hide-on-med-and-down amber accent-4">
+              <li class="tab col s2"><a href="#qrcode" class="active black-text">QR Code Generator</a></li>
+              <li class="tab col s2 black-text"><a class="black-text" href="#api">API</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <section>
+  <div id="qrcode" class="col s12 valign-wrapper">
+  <div class="container valign">
+    <div class="row center header">
+      <h5>Enter Details to Generate QR Code</h5>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <form class="form">
+          <div class="row">
+            <div class="col s0 m2">
+            </div>
+            <div class="input-field col s12 m8">
+              <input id="name" name="name" type="text" class="validate" required pattern="^.{1,99}$" autocomplete="off" value="">
+              <label for="name" data-error="Payee name must be between 1-99 characters">Receiver/Payee Name</label>
+            </div>
+            <div class="col s0 m2">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s0 m2">
+            </div>
+            <div class="input-field col s12 m8">
+              <input id="vpa" name="vpa" type="text" class="validate" required pattern="^.{2,}@.{2,}$" autocomplete="off" value="">
+              <label for="vpa" data-error="Payee VPA must be &lt;prefix&gt;@&lt;psp&gt;. Prefix between 3-255 characters">Receiver/Payee VPA</label>
+            </div>
+            <div class="col s0 m2">
+            </div>
+          </div>
+          <!-- <div class="row">
+            <div class="col s0 m2">
+            </div>
+            <div class="input-field col s12 m8">
+              <input id="note" name="note" type="text" autocomplete="off">
+              <label for="note" data-error="Note can be [0-50] characters">Note</label>
+            </div>
+            <div class="col s0 m2">
+            </div>
+          </div> -->
+          <!-- <div class="row">
+            <div class="col s0 m2">
+            </div>
+            <div class="input-field col s12 m4">
+              <p>
+                <input type="checkbox" id="merchant_qr" name="merchant_qr"/>
+                <label for="merchant_qr">I'm a bank designated merchant</label>
+              </p>
+            </div>
+            <div class="input-field col s12 m4">
+              <input type="text" id="mcc" name="mcc" pattern="^[0-9]{4}$" size="4" disabled>
+              <label for="mcc" error-data='4 digit MCC must be provided for merchant'>Merchant Category Code</label>
+            </div>
+            <div class="col s0 m2">
+            </div>
+          </div> -->
+          <!-- <div class="row">
+            <div class="col s0 m2">
+            </div>
+            <div class="input-field col s8">
+              <input type="text" id="mcc" name="mcc" class="autocomplete">
+              <label for="mcc">Merchant Category Code</label>
+            </div>
+            <div class="col s0 m2">
+            </div>
+          </div> -->
+          <div class="row">
+            <div class="col s12" style="text-align: center;">
+              <button type="submit" class="waves-effect waves-light btn generate-qrcode center black">Generate</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+  </section>
+  <div id="api" class="col s12 container"></div>
+  <footer class="s12">
+    <div class="col s12 copyright-footer-text blue-grey darken-4 white-text center">
+      &copy; Santanu Sinha, All rights reserved
+    </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="libs/jquery/jquery-2.1.1.min.js"></script>
+  <script src="libs/jquery/jquery.validate.min.js"></script>
+  <script src="libs/materialize/js/materialize.min.js"></script>
+  <script src="libs/clipboard/clipboard.min.js"></script>
+  <script src="libs/mfp/jquery.magnific-popup.min.js"></script>
+
+  <script src="js/app.js"></script>
+  
+  </body>
+
+<!-- Mirrored from upiqr.in/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 12 Nov 2022 04:44:09 GMT -->
+</html>

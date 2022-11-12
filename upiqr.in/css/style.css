@@ -1,0 +1,197 @@
+html, body {
+    height: 100%;
+}
+
+
+form .row {
+    margin-bottom: 0px;
+}
+
+form .row p {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+/*    padding: 4px;
+    text-align: right;
+*/    z-index: 1000;
+}
+
+footer .row {
+    margin-bottom: 0px;
+}
+
+#qrcode {
+    height: 85%;
+}
+
+.qrcode-display {
+    height: 256px;
+    cursor: pointer;
+}
+
+.qrcode-name {
+    display: block;
+    font-family: sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.qrcode-vpa {
+    display: block;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.qrcode-hint {
+    display: none;
+}
+
+.qrcode-footer {
+    display: none;
+}
+
+.qr-poster-tip {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.input-field div.error {
+    position: relative;
+    top: -1rem;
+    left: 0rem;
+    font-size: 0.8rem;
+    color: red;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+}
+
+.noqr {
+    border: black 1px dashed;
+    width: 256px;
+    height: 256px;
+    display: block;
+    margin: auto;
+}
+
+.qr {
+    border: black 1px solid;
+}
+
+.round-button {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 0px;
+}
+
+.qrcode-logo {
+    display: none;
+}
+
+.fixed-action-btn {
+    bottom: 46px !important;
+}
+
+.qraction a i {
+}
+
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+.hidden {
+    display: none;
+}
+
+#api h1 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#api h2 {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+#api h3 {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+
+
+nav {
+	/*height: 54px;*/
+    color: #242a30;
+	
+}
+
+.logo {
+    height: 36px;
+    margin-left: 27px;
+    margin-top: 8px;
+    float: left;
+}
+.title-text {
+    margin-right: 10px;
+    padding: 18px 20px !important;
+    /*height: 54px;*/
+    /*width: 220px;*/
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 30px;
+    font-family: inherit;
+    color: #242a30 !important;
+    float: left;
+    font-style: initial;
+}
+
+.tabs {
+    height: 58px;
+}
+
+.tabs .tab {
+    height: 58px;
+    line-height: 58px;
+}
+
+.tab-header {
+    margin-top: 6px;
+}
+
+.tabs .indicator {
+    background-color: black;
+}
+
+.qrcode-container {
+    margin-top: 18px;
+}
+
+.api-link {
+    padding-top: 10px !important;
+}
